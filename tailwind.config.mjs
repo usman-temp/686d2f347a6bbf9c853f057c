@@ -1,11 +1,1 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-    "./src/app/**/*.{js,jsx,ts,tsx}"
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+/** @type {import('tailwindcss').Config} */module.exports = {  content: [    './src/app/**/*.{js,ts,jsx,tsx,mdx}',    './src/components/**/*.{js,ts,jsx,tsx,mdx}'  ],  theme: {    extend: {      colors: {        primary: {          500: '#FF6B35',          600: '#E65A2B'        }      }    },  },  plugins: [    require('@tailwindcss/typography')  ],}
